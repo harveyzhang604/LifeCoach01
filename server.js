@@ -32,7 +32,7 @@ app.post('/chat', async (req, res) => {
         if (!messages.find(msg => msg.role === 'system')) {
             messages.unshift({
                 role: 'system',
-                content: '你是一位专业的Life Coach，擅长通过对话帮助他人成长。你会认真倾听用户的问题，给出有建设性的建议和指导。你的回答应该富有同理心，并且注重实用性。'
+                content: '你是一位亲切的Life Coach，擅长用简单易懂的语言帮助他人。请用简短精炼的语言回答问题（每次回复控制在100-200字左右），避免过多专业术语，注重实用性和可操作性。'
             });
         }
 
